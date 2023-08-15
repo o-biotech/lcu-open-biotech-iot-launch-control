@@ -1,0 +1,11 @@
+{
+  "Package": {
+    "Name": "Basic BioTech IoT Starter",
+    "Description": "A starting point for BioTech IoT utillizing NPM Pckages",
+    "Image": "https://www.fathym.com/assets/images/logo.png",
+    "PreviewImage": "https://www.fathym.com/assets/images/logo.png"
+  },
+  "EaC": "./assets/eac.json",
+  "Parameters": "./assets/parameters.json"
+}
+

@@ -1,0 +1,18 @@
+{
+  "IOT_ENSEMBLE_API_KEY": {
+    "type": "input",
+    "message": "Enter your IoT Ensemble API Key (www.fathym.com/dashboard/iot):"
+  },
+  "HABISTACK_API_KEY": {
+    "type": "input",
+    "message": "Enter your Habistack API Key (https://www.fathym.com/dashboard/forecast):"
+  },
+  "GEOCODIO_API_KEY": {
+    "type": "input",
+    "message": "Enter your Geocodio API Key (https://dash.geocod.io/apikey):"
+  },
+  "DEFAULT_LOCATION": {
+    "type": "input",
+    "message": "Enter the default location to load the data for:"
+  }
+}
