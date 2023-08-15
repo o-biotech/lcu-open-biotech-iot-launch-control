@@ -1,0 +1,18 @@
+{
+  "name": "@o-biotech/lcu-open-biotech-iot-launch-control",
+  "version": "0.0.0",
+  "description": "@o-biotech/lcu-open-biotech-iot-launch-control",
+  "author": "Fathym, Inc",
+  "main": "lcu.json",
+  "scripts": {
+    "deploy": "npx fathym git && npm version patch && npm publish --access public --tag thinky && npx fathym git"
+  },
+  "keywords": [
+    "lowcodeunit",
+    "lcu"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@o-biotech/lcu-biotech-iot-launch-control": "^0.0.5"
+  }
+}

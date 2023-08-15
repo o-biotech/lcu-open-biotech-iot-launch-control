@@ -1,0 +1,192 @@
+{
+  "Applications": {
+    "{{PROJECT_LOOKUP}}-home-page": {
+      "Details": {
+        "Description": "A BioTech home page",
+        "Name": "A BioTech home page"
+      },
+      "LookupConfig": {
+        "PathRegex": "/.*"
+      },
+      "Package": {
+        "Details": {
+          "Package": "@fathym/v2-fathym-public-web-biotech-gatsby",
+          "Version": "latest"
+        },
+        "Type": "NPMLowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "BaseHref": "/",
+          "DefaultFile": "index.html"
+        },
+        "Type": "DFSProcessor"
+      }
+    },
+    "{{PROJECT_LOOKUP}}-data-dashboard": {
+      "Details": {
+        "Description": "A simple data dashboard",
+        "Name": "Data Dashboard"
+      },
+      "LookupConfig": {
+        "PathRegex": "/dashboard.*"
+      },
+      "Package": {
+        "Details": {
+          "Package": "@fathym-it/fathym-data-dashboard",
+          "Version": "latest"
+        },
+        "Type": "NPMLowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "BaseHref": "/dashboard/",
+          "DefaultFile": "index.html"
+        },
+        "Type": "DFSProcessor"
+      },
+      "DataTokens": {
+        "lcu-state-config": {
+          "Details": {
+            "Name": "state-config",
+            "Description": "state-config"
+          },
+          "Value": "{\"Location\": \"{{DEFAULT_LOCATION}}\"}"
+        }
+      }
+    },
+    "{{PROJECT_LOOKUP}}-iot-ensemble-api-proxy": {
+      "Details": {
+        "Name": "IoT Ensemble API Proxy",
+        "Description": "The API Proxy for IoT Ensemble APIs."
+      },
+      "LookupConfig": {
+        "PathRegex": "/api/iot.*"
+      },
+      "Package": {
+        "Details": {
+          "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble",
+          "Security": "lcu-subscription-key~{{IOT_ENSEMBLE_API_KEY}}"
+        },
+        "Type": "APILowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "InboundPath": "api/iot"
+        },
+        "Type": "ProxyProcessor"
+      }
+    },
+    "{{PROJECT_LOOKUP}}-habistack-api-proxy": {
+      "Details": {
+        "Name": "Habistack API Proxy",
+        "Description": "The API Proxy for Habistack APIs."
+      },
+      "LookupConfig": {
+        "PathRegex": "/api/habistack.*"
+      },
+      "Package": {
+        "Details": {
+          "APIRoot": "https://fathym-cloud-prd.azure-api.net/habistack/weather/ground/",
+          "Security": "lcu-subscription-key~{{HABISTACK_API_KEY}}"
+        },
+        "Type": "APILowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "InboundPath": "api/habistack"
+        },
+        "Type": "ProxyProcessor"
+      }
+    },
+    "{{PROJECT_LOOKUP}}-geocodio-api-proxy": {
+      "Details": {
+        "Name": "Geocodio API Proxy",
+        "Description": "The API Proxy for Geocodio APIs."
+      },
+      "LookupConfig": {
+        "PathRegex": "/api/geocodio.*"
+      },
+      "Package": {
+        "Details": {
+          "APIRoot": "https://api.geocod.io/v1.7/",
+          "Security": "?api_key~{{GEOCODIO_API_KEY}}"
+        },
+        "Type": "APILowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "InboundPath": "api/geocodio"
+        },
+        "Type": "ProxyProcessor"
+      }
+    },
+    "{{PROJECT_LOOKUP}}-freeboard-dashboard": {
+      "Details": {
+        "Description": "Freeboard dashboard",
+        "Name": "Freeboard Dashboard"
+      },
+      "LookupConfig": {
+        "PathRegex": "/freeboard.*"
+      },
+      "Package": {
+        "Details": {
+          "Package": "@semanticjs/freeboard",
+          "Version": "latest"
+        },
+        "Type": "NPMLowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "BaseHref": "/freeboard/",
+          "DefaultFile": "index.html"
+        },
+        "Type": "DFSProcessor"
+      },
+      "DataTokens": {
+        "lcu-state-config": {
+          "Details": {
+            "Name": "state-config",
+            "Description": "state-config"
+          },
+          "Value": "{\"FreeboardConfigURL\": \"https://www.fathym.com/templates/freeboard/DeviceDemoDashboard-BioTechFreeboard.json\"}"
+        }
+      }
+    },
+    "{{PROJECT_LOOKUP}}-freeboard-api": {
+      "Details": {
+        "Name": "Freeboard API Proxy",
+        "Description": "The API Proxy for Freeboard using the Warm Query IoT API"
+      },
+      "LookupConfig": {
+        "PathRegex": "/api/freeboard.*"
+      },
+      "Package": {
+        "Details": {
+          "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble/WarmQuery",
+          "Security": "lcu-subscription-key~{{IOT_ENSEMBLE_API_KEY}}"
+        },
+        "Type": "APILowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "InboundPath": "api/freeboard"
+        },
+        "Type": "ProxyProcessor"
+      }
+    }
+  },
+  "Projects": {
+    "{{PROJECT_LOOKUP}}": {
+      "ApplicationLookups": [
+        "{{PROJECT_LOOKUP}}-home-page",
+        "{{PROJECT_LOOKUP}}-data-dashboard",
+        "{{PROJECT_LOOKUP}}-iot-ensemble-api-proxy",
+        "{{PROJECT_LOOKUP}}-habistack-api-proxy",
+        "{{PROJECT_LOOKUP}}-geocodio-api-proxy",
+        "{{PROJECT_LOOKUP}}-freeboard-dashboard",
+        "{{PROJECT_LOOKUP}}-freeboard-api"
+      ]
+    }
+  }
+}

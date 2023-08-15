@@ -1,0 +1,29 @@
+{
+  "Package": {
+    "Name": "Basic BioTech IoT Starter",
+    "Description": "A starting point for BioTech IoT utilizing NPM Packages",
+    "Image": "https://www.fathym.com/assets/images/logo.png",
+    "PreviewImage": "https://www.fathym.com/assets/images/logo.png",
+    "Intents": [
+      "BioTech",
+      "IoT Dashboard",
+      "Launch Control",
+      "Getting Started",
+      "Medical Devices",
+      "Azure Cloud"
+    ]
+  },
+  "Configurations": {
+    "Basic": {
+      "Name": "Basic BioTech IoT Starter",
+      "Description": "A starting point for BioTech IoT.",
+      "Phases": [
+        {
+          "Name": "Configure BioTech IoT",
+          "Order": 1,
+          "Asset": "configure"
+        }
+      ]
+    }
+  }
+}
