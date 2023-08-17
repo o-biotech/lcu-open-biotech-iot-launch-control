@@ -51,7 +51,7 @@
             "Name": "state-config",
             "Description": "state-config"
           },
-          "Value": "{\"Location\": \"{{DEFAULT_LOCATION}}\"}"
+          "Value": "{\r\n    \"Location\": \"{{DEFAULT_LOCATION}}\",\r\n    \"IoTAPIQuery\": \"\/WarmQuery?includeEmulated=true&page=1&pageSize=100\"\r\n}"
         }
       }
     },

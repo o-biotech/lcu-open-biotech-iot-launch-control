@@ -1,6 +1,6 @@
 {
   "name": "@o-biotech/lcu-open-biotech-iot-launch-control",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "@o-biotech/lcu-open-biotech-iot-launch-control",
   "author": "Fathym, Inc",
   "main": "lcu.json",
