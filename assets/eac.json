@@ -100,7 +100,7 @@
     },
     "$6": {
       "Application": {
-        "Description": "Freeboard Dashboard",
+        "Description": "A Freeboard dashboard to view emulated or device data auto-populated from IoT Ensemble.",
         "Name": "Freeboard Dashboard"
       },
       "LookupConfig": {
@@ -126,8 +126,8 @@
     },
     "$7": {
       "Application": {
-        "Description": "A BioTech home page",
-        "Name": "A BioTech home page"
+        "Description": "A Biotech home page",
+        "Name": "A Biotech home page"
       },
       "LookupConfig": {
         "PathRegex": "/.*"

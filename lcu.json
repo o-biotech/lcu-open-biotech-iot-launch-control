@@ -1,7 +1,7 @@
 {
   "Package": {
-    "Name": "Basic BioTech IoT Starter",
-    "Description": "A starting point for BioTech IoT utillizing NPM Packages",
+    "Name": "Biotech Launch Pad - NPM Launch",
+    "Description": "A Biotech launch pad that consists of a data dashboard and Freeboard dashboard (both via NPM) auto-populated with emulated data or device data from multiple APIs.",
     "Image": "https://www.fathym.com/assets/images/logo.png",
     "PreviewImage": "https://www.fathym.com/assets/images/logo.png"
   },
