@@ -1,25 +1,26 @@
 {
   "Package": {
-    "Name": "Basic BioTech IoT Starter",
-    "Description": "A starting point for BioTech IoT utilizing NPM Packages",
+    "Name": "Biotech Launch Pad - NPM Launch",
+    "Description": "A Biotech launch pad that consists of a data dashboard and Freeboard dashboard (both via NPM) auto-populated with emulated data or device data from multiple APIs.",
     "Image": "https://www.fathym.com/assets/images/logo.png",
     "PreviewImage": "https://www.fathym.com/assets/images/logo.png",
     "Intents": [
-      "BioTech",
+      "Biotech",
       "IoT Dashboard",
       "Launch Control",
       "Getting Started",
       "Medical Devices",
-      "Azure Cloud"
+      "Azure Cloud",
+      "NPM"
     ]
   },
   "Configurations": {
     "Basic": {
-      "Name": "Basic BioTech IoT Starter",
-      "Description": "A starting point for BioTech IoT.",
+      "Name": "Biotech Launch Pad - NPM Launch",
+      "Description": "A Biotech launch pad that consists of a data dashboard and Freeboard dashboard (both via NPM) auto-populated with emulated data or device data from multiple APIs.",
       "Phases": [
         {
-          "Name": "Configure BioTech IoT",
+          "Name": "Setting Up Biotech Launch Pad - NPM Launch",
           "Order": 1,
           "Asset": "configure"
         }

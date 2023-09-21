@@ -4,7 +4,7 @@
     "Prompts": [
       {
         "Type": "eac:projects|select",
-        "Message": "Choose the project to deploy the package to?",
+        "Message": "Choose the project to deploy the Biotech Launch Pad - NPM Launch to?",
         "Arguments": {
           "CreateText": "Create a project"
         }

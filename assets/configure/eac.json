@@ -2,8 +2,8 @@
   "Applications": {
     "{{PROJECT_LOOKUP}}-home-page": {
       "Details": {
-        "Description": "A BioTech home page",
-        "Name": "A BioTech home page"
+        "Description": "A Biotech home page",
+        "Name": "A Biotech home page"
       },
       "LookupConfig": {
         "PathRegex": "/.*"
@@ -123,7 +123,7 @@
     },
     "{{PROJECT_LOOKUP}}-freeboard-dashboard": {
       "Details": {
-        "Description": "Freeboard dashboard",
+        "Description": "A Freeboard dashboard to view emulated or device data auto-populated from IoT Ensemble.",
         "Name": "Freeboard Dashboard"
       },
       "LookupConfig": {
@@ -178,6 +178,10 @@
   },
   "Projects": {
     "{{PROJECT_LOOKUP}}": {
+      "Details": {
+        "Name": "{{#if (lookup EaC.Projects PROJECT_LOOKUP)}}{{#if Details.Name}}{{Details.Name}}{{/if}}{{else}}Biotech Launch Pad - NPM Launch{{/if}}",
+        "Description": "{{#if (lookup EaC.Projects PROJECT_LOOKUP)}}{{#if Details.Description}}{{Details.Description}}{{/if}}{{else}}A Biotech launch pad that consists of a data dashboard and Freeboard dashboard (both via NPM) auto-populated with emulated data or device data from multiple APIs.{{/if}}"
+      },
       "ApplicationLookups": [
         "{{PROJECT_LOOKUP}}-home-page",
         "{{PROJECT_LOOKUP}}-data-dashboard",
